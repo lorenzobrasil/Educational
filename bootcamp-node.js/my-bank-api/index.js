@@ -1,6 +1,6 @@
 import express from "express";
 import { promises as fs } from "fs";
-import accountsRouter from "./routes/accountRouter.js";
+import accountsRouter from "./routes/account.route.js";
 import winston from "winston";
 import cors from "cors";
 
