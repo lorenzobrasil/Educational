@@ -1,0 +1,5 @@
+/.dotenv
+/package-lock.json
+/package.json
+*.log
+/.vscode
