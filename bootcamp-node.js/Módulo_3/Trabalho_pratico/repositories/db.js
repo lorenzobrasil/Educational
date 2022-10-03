@@ -3,8 +3,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-console.log(process.env.CONNECTION_STRING);
-
 async function connect() {
   try {
     if (global.connection) {
