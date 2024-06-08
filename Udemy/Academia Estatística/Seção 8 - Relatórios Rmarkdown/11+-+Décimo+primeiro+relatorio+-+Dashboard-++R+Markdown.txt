@@ -1,0 +1,65 @@
+---
+title: "Apresentação Gráfica"
+output:
+  flexdashboard::flex_dashboard: default
+
+---
+# Intro {.sidebar}
+
+GRÁFICO EM DIVERSOS FORMATOS:
+
+* Gráfico Plot 
+* Gráfico Plot e COS
+* Gráfico Imagem
+
+Treinamento R Markdown - Prof. Grimaldo Oliveira
+
+-------------------------------------
+# Gráfico Plot
+
+## Column 1
+    
+###  PLOT 1
+    
+```{r}
+
+x=rnorm(100)
+y=rnorm(100)
+plot(x,y)
+
+```
+   
+# Gráfico Plot e COS
+
+## Column 2
+    
+### Grafico 2
+    
+```{r}
+plot(x,y,xlab="this is the x-axis",ylab="this is the y-axis",main="Plot of X vs Y")
+```
+    
+### Grafico 3
+
+```{r}
+x=seq(-pi,pi,length=50)
+y=x
+f=outer(x,y,function(x,y)cos(y)/(1+x^2))
+contour(x,y,f)
+```
+
+# Gráfico Imagem
+
+## Column 3
+    
+### Grafico 4
+```{r}
+x=seq(-pi,pi,length=50)
+y=x
+f=outer(x,y,function(x,y)cos(y)/(1+x^2))
+contour(x,y,f)
+contour(x,y,f,nlevels=45,add=T)
+fa=(f-t(f))/2
+contour(x,y,fa,nlevels=15)
+image(x,y,fa)
+```

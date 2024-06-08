@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pratique - técnicas de amostragem"
+version = "0.1.0"
+description = "Exercício prático de aplicação de técnicas de amostragem."
+authors = ["Lorenzo <lorenzoberv.projects@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+matplotlib = "^3.9.0"
+ipykernel = "^6.29.4"
+pandoc = "^2.3"
+jupyter = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
